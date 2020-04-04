@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+	overflow: hidden;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}
+.clearfix {
+	height: 0;
+	zoom: 1;
+}
+.outer{
+	position:absolute;
+	top:0;
+	left:0;
+	height:4100px;
+	width:100%;
+	min-width: 1240px;
+	background: #272727 url(../img/bg.jpg) no-repeat;
+	overflow: hidden;
+} 
+
+/* 头部导航 */
+.header_nav{
+	width: 100%;
+	height: 38px;
+	background-color: #fff;
+}
+.nav_container{
+	width: 70%;
+	height: 38px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header_nav a{
+	font-size: 12px;
+	color: #464646;
+	text-decoration: none;
+}
+/* 头部导航logo部分 */
+.header_nav .nav_left{
+	float: left;
+}
+/* 头部导航导航部分 */
+.header_nav .nav_right{
+	float: right;
+	line-height: 38px;
+}
+.header_nav .nav_right a{
+	margin-left: 17px;
+}
+.header_nav .nav_right .protection_icon{
+	vertical-align: text-top;
+}
+.header_nav .nav_right .game_list{
+	vertical-align: text-bottom;
+	width: 11px;
+	height: 11px;
+}
+
+/* banner部分 */
+.banner{
+	width: 100%;
+	height: 790px;
+	display: flex;
+}
+.banner .game_button{
+	width: 340px;
+	height: 44px;
+	margin:auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -340px;
+	margin-top: 695px;
+}
+.banner .game_button a{
+	float: right;
+	margin-right: 12px;
+}
+.game_button a img{
+	width: 158px;
+	height: 44px;
+}
+.banner .login{
+	position: absolute;
+	left: 50%;
+	margin-left: -260px;
+	margin-top: 770px;
+	color: #272727;
+	text-decoration: none;
+}
+.banner a.login:hover{
+	text-decoration: underline;
+}
+
+
+/* 心悦特权礼包 */
+.vip_gift{
+	width: 100%;
+	height: auto;
+	margin-top: 200px;
+}
+.vip_gift h2,p{
+	text-align: center;
+}
+.vip_gift p{
+	margin-top: 11px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+.vip_gift h2 img{
+	width: 586px;
+	height: 33px;
+}
+.gift_container {
+	width: 1000px;
+	height: 398px;
+	margin: 33px auto;
+}
+/* 游戏家特权礼包 */
+.gamer_gift{
+	float: left;
+	width: 484px;
+	height: 398px;
+	padding: 29px 101px 24px 101px;
+	margin-right: 20px;
+	box-sizing: border-box;
+	background-image: url(../img/content_box.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+.gamer_gift h3{
+	text-align: center;
+}
+.gamer_gift ul{
+	width: 282px;
+	margin: 16px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.gamer_gift ul li .box{
+	width: 79px;
+	height: 76px;
+	box-sizing: border-box;
+	border: 1px solid #4a160c;
+	background-color: #493936;
+}
+.gamer_gift ul li:nth-child(4){
+	margin-top: 8px;
+	margin-left: 51px;
+}
+.gamer_gift ul li:nth-child(5){
+	margin-top: 8px;
+	margin-right: 51px;
+}
+.gamer_gift ul li .prop_name{
+	font-family: "微软雅黑";
+	font-size: 11px;
+}
+.gamer_gift  .btn_pickup{
+	margin: 0 auto;
+}
+.gamer_gift  .btn_pickup img{
+	width: 227px;
+	height: 61px;
+}
+/* 心悦玩家礼包 */
+.xy_gift{
+	float: right;
+	margin-right: 0;
+}
+
+
+/* 天涯萌新礼 */
+.new_gift{
+	margin-top: 265px;
+}
+
+
+/* 天涯归雁礼 */
+.old_gift{
+	margin-top: 200px;
+}
+
+
+/* 每日天刀有惊喜 */
+.daily_gift{
+	text-align: center;
+	margin-top: 300px;
+}
+.lottery_list{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	width: 1000px;
+	height: 462px;
+	margin: 0 auto;
+	padding: 27px;
+	box-sizing: border-box;
+	position: relative;
+}
+.lottery_list .props_container{
+	display: inline-block;
+	width: 226px;
+	height: 144px;
+	padding: 16px auto;
+	box-sizing: border-box;
+	margin-left: 4px;
+	text-align: center;
+	background-image: url(../img/props_normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.lottery_list li:nth-child(6){
+	margin-left: 467px;
+}
+.props_container img{
+	display: block;
+	width: 79px;
+	height: 76px;
+	margin: 16px auto;
+}
+.props_container span{
+	font-size: 14px;
+	color: white;
+}
+.lottery_list .props_active{
+	background-image: url(../img/props_active.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/* 立即抽奖按钮 */
+.btn_get{
+	position: absolute;
+	top: 170px;
+	left: 256px;
+}
+.btn_get img{
+	width: 467px;
+	height: 144px;
+}
+
+/* footer部分 */
+.footer{
+	margin-top: 111px;
+	padding-top: 39px;
+	color: #979797;
+}
+.footer p{
+	font-family: "宋体";
+	font-size: 12px;
+}
